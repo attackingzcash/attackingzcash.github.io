@@ -3,7 +3,9 @@
 This website is dedicated to documenting attacks and defenses in Zcash Protocol
 and to start the fun, we have a brand new whitepaper!
 
-TLDR: Sietch is what transaction graphs crave!
+TLDR: The number of shielded outputs in the average Zcash transaction is not
+enough to have strong privacy in light of new advances in blockchain analysis
+software.
 
 <table>
 <tr>
