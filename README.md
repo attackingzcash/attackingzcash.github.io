@@ -7,7 +7,7 @@ TLDR: The number of shielded outputs in the average Zcash transaction is not
 enough to have strong privacy in light of new advances in blockchain analysis
 software.
 
-<a href="https://attackingzcash.substack.com/" target=_blank>Subscribe</a> to the
+<a href="https://attackingzcash.substack.com/" target="_blank">Subscribe</a> to the
 "Attacking Zcash" newletter to stay informed about the latest tech and news relating
 to privacy and Zcash Protocol.
 
