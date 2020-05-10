@@ -15,12 +15,12 @@ to privacy and Zcash Protocol.
 <tr>
 <td><a href="/zec-graph-dot.png"><img src="/zec-graph-dot.png"></a><br><a href="/zec.gv">Source</a></td> </tr>
 <tr>
-<td><a href="/sietch-graphviz.png"><img src="/sietch-graphviz.png" height="70%" width="70%"></a></td>
+<td><a href="/sietch-graphviz.png"><img src="/sietch-graphviz.png" height="70%" width="70%"></a><a href="/sietch.gv">Source</a></td>
 </tr>
 </table>
 
 <a href="/papers/attacking-zcash-for-fun-and-profit.pdf" target="_blank">
-<img src="/img/attacking-zcash-protocol-abstract.png" height="50%" width="50%">
+<img src="/img/attacking-zcash-protocol-abstract.png" height="75% width="75%">
 </a>
 
 
