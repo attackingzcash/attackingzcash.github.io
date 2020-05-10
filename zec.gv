@@ -1,0 +1,17 @@
+digraph finite_state_machine {
+    label="Zcash Mainnet Shielded Transaction Graph";
+    fontsize=20;
+	rankdir=LR;
+    ranksep=3;
+    ratio=auto;
+    overlap = false;
+    splines = true;
+	Alice -> Bob     [label=z ];
+	Alice -> Charlie [label=z ];
+
+	Bob   -> Bob_1 [ label=z];
+	Bob   -> Bob_2 [ label=z];
+
+	Charlie   -> Charlie_1 [ label=z];
+	Charlie   -> Charlie_2 [ label=z];
+}

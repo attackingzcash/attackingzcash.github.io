@@ -1,0 +1,92 @@
+digraph finite_state_machine {
+    label="Sietch-Enabled Shielded Transaction Graph";
+    fontsize=20;
+	rankdir=LR;
+    ranksep=3;
+    ratio=auto;
+overlap = false;
+splines = true;
+#	size="8,5"
+#	node [shape = circle]; Alice Bob Charlie David Erin Frank Grace Heidi Ivan Bob_1 Bob_2 Bob_3 Bob_4 Bob_5 Bob_6 Bob_7 Bob_8 Charlie_1 Charlie_2 Charlie_3 Charlie_4 Charlie_5 Charlie_6 Charlie_7 Charlie_8 Charlie_9
+#	node [shape = doublecircle]; Bob_9 Bob_10 Bob_11 Bob_12 Bob_13 Bob_14 Bob_15 Bob_16 Bob_17
+	Alice -> Bob     [label=z ];
+	Alice -> Charlie [label=z ];
+	Alice -> David   [label=z ];
+	Alice -> Erin    [label=z ];
+	Alice -> Frank   [label=z ];
+	Alice -> Grace   [label=z ];
+	Alice -> Heidi   [label=z ];
+	Alice -> Ivan    [label=z ];
+
+	Bob   -> Bob_1 [ label=z];
+	Bob   -> Bob_2 [ label=z];
+	Bob   -> Bob_3 [ label=z];
+	Bob   -> Bob_4 [ label=z];
+	Bob   -> Bob_5 [ label=z];
+	Bob   -> Bob_6 [ label=z];
+	Bob   -> Bob_7 [ label=z];
+	Bob   -> Bob_8 [ label=z];
+
+	Charlie   -> Charlie_1 [ label=z];
+	Charlie   -> Charlie_2 [ label=z];
+	Charlie   -> Charlie_3 [ label=z];
+	Charlie   -> Charlie_4 [ label=z];
+	Charlie   -> Charlie_5 [ label=z];
+	Charlie   -> Charlie_6 [ label=z];
+	Charlie   -> Charlie_7 [ label=z];
+	Charlie   -> Charlie_8 [ label=z];
+
+	David   -> David_1 [ label=z];
+	David   -> David_2 [ label=z];
+	David   -> David_3 [ label=z];
+	David   -> David_4 [ label=z];
+	David   -> David_5 [ label=z];
+	David   -> David_6 [ label=z];
+	David   -> David_7 [ label=z];
+	David   -> David_8 [ label=z];
+
+	Erin   -> Erin_1 [ label=z];
+	Erin   -> Erin_2 [ label=z];
+	Erin   -> Erin_3 [ label=z];
+	Erin   -> Erin_4 [ label=z];
+	Erin   -> Erin_5 [ label=z];
+	Erin   -> Erin_6 [ label=z];
+	Erin   -> Erin_7 [ label=z];
+	Erin   -> Erin_8 [ label=z];
+
+	Frank   -> Frank_1 [label=z ];
+	Frank   -> Frank_2 [label=z ];
+	Frank   -> Frank_3 [label=z ];
+	Frank   -> Frank_4 [label=z ];
+	Frank   -> Frank_5 [label=z ];
+	Frank   -> Frank_6 [label=z ];
+	Frank   -> Frank_7 [label=z ];
+	Frank   -> Frank_8 [label=z ];
+
+	Grace   -> Grace_1 [ label=z];
+	Grace   -> Grace_2 [ label=z];
+	Grace   -> Grace_3 [ label=z];
+	Grace   -> Grace_4 [ label=z];
+	Grace   -> Grace_5 [ label=z];
+	Grace   -> Grace_6 [ label=z];
+	Grace   -> Grace_7 [ label=z];
+	Grace   -> Grace_8 [ label=z];
+
+	Heidi   -> Heidi_1 [ label=z];
+	Heidi   -> Heidi_2 [ label=z];
+	Heidi   -> Heidi_3 [ label=z];
+	Heidi   -> Heidi_4 [ label=z];
+	Heidi   -> Heidi_5 [ label=z];
+	Heidi   -> Heidi_6 [ label=z];
+	Heidi   -> Heidi_7 [ label=z];
+	Heidi   -> Heidi_8 [ label=z];
+
+	Ivan   -> Ivan_1 [ label=z];
+	Ivan   -> Ivan_2 [ label=z];
+	Ivan   -> Ivan_3 [ label=z];
+	Ivan   -> Ivan_4 [ label=z];
+	Ivan   -> Ivan_5 [ label=z];
+	Ivan   -> Ivan_6 [ label=z];
+	Ivan   -> Ivan_7 [ label=z];
+	Ivan   -> Ivan_8 [ label=z];
+}
