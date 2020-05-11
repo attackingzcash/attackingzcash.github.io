@@ -5,6 +5,13 @@ Protocol coins which use Zcash source code. We note that Bitcoin Gold (BTG)
 is not listed because they use the PoW algorithm from Zcash (Equihash) but
 do not use any of the privacy-related code.
 
+Zcash originally forked the source code of Bitcoin 0.11.2 and has cherry-picked
+many individual fixes and features but primarily remains Bitcoin 0.11.2 internals
+with brand new Zcash features bolted on top of that.
+
+Notably, recent developments by Bitcoin Core to manage wallets via the RPC
+interface is lacking in Zcash, as well as P2P improvements.
+
 <a href="zcash-family-tree.png" target="_blank">
 <img src="zcash-family-tree.png" height="75%" width="75%">
 </a>
