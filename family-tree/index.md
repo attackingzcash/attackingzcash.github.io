@@ -46,7 +46,7 @@ recent ideas and was the first pure Sapling blockchain to enforce
 privacy by default.
 
 Hush originally was based on Zcash 1.0.8 but in response to the Sprout CVE
-we migrated to Komodo as our upstream. The original blockchain was sunset
+it migrated to Komodo as source code upstream. The original blockchain was sunset
 at Block 500,000, snapshotted and airdropped to a new Pure Sapling blockchain.
 by giving users and miners a choice and in that way it was User Activated
 Hard Fork. The Hush community is on their second mainnet and tools
