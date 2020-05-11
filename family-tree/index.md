@@ -15,3 +15,7 @@ purely on Proof-of-Work (not Proof-of-Stake) use cases and are focused on
 privacy-by-default use cases. This is sometimes calles "z2z" because sending
 to zaddrs is required and sending from a zaddr to a transparent address is
 not allowed.
+
+It is easy to see that ZClassic has been used as a base for many new source
+code and chain forks and that Komodo has creates a micro-universe of it's
+own run-time, such as Pirate, and source code forks, such as Hush v3.
