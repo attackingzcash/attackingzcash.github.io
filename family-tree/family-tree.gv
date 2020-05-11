@@ -1,0 +1,31 @@
+digraph finite_state_machine {
+    label="Zcash Source Code Family Tree";
+    fontsize=20;
+	rankdir=LR;
+    ranksep=3;
+    ratio=auto;
+    overlap = false;
+    splines = true;
+	"Bitcoin (BTC)" -> "Zerocash (XZC)";
+    "Zerocash (XZC)" -> "Zcash (ZEC)";
+    "Zcash (ZEC)" -> "Komodo (KMD)";
+    "Zcash (ZEC)" -> "Hush v2 (HUSH)";
+    "Komodo (KMD)" -> "Komodo Asset Chains";
+    "Komodo (KMD)" -> "Hush v3 (HUSH)";
+    "Hush v3 (HUSH)" -> "Hush Smart Chains";
+    "Komodo (KMD)" -> "Pirate (ARRR)";
+    "Komodo (KMD)" -> "Bitcoin Hush (BTCH)";
+    "Komodo (KMD)" -> "SafeCoin (SAFE)";
+    "Zcash (ZEC)"  -> "ZClassic (ZCL)";
+    "ZClassic (ZCL)" -> "Horizen (ZEN)";
+    "ZClassic (ZCL)" -> "BitcoinPrivate (BTCP)";
+    "ZClassic (ZCL)" -> "Anon (ANON)";
+    "Zcash (ZEC)" -> "VoteCoin (VOT)";
+    "Zcash (ZEC)" -> "Arrow (ARW)";
+    "Zcash (ZEC)" -> "Snowgem (XSG)";
+    "Zcash (ZEC)" -> "Zero (ZER)";
+    "Zcash (ZEC)" -> "BitcoinZ (BTCZ)";
+    "Zcash (ZEC)" -> "ZelCash (ZEL)";
+    "Zcash (ZEC)" -> "LitecoinZ (LTZ)";
+    "Zcash (ZEC)" -> "Ycash (YEC)";
+}
