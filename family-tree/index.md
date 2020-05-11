@@ -25,4 +25,38 @@ not allowed.
 
 It is easy to see that ZClassic has been used as a base for many new source
 code and chain forks and that Komodo has creates a micro-universe of it's
-own run-time, such as Pirate, and source code forks, such as Hush v3.
+own run-time forks, such as Pirate, and source code forks, such as Hush v3.
+There are close to 100 known run-time forks of Komodo which blockchain
+parameters can be specified completely via the command-line and thus do not
+require maintaining source code forks.
+
+KMD originally had shielded addresses but in response to the Sprout inflation
+but CVE-2019-7167, it migrated all shielded functionality to the Pirate chain and disabled
+shielded features on KMD. This was a very strategic move to isolate
+metadata leakage and increase the anonymity set of Pirate.
+
+As of May 2020, Pirate and Arrow are the only Zcash Protocol blockchains
+which enforce privacy by default, by disabling sending to transparent addresses.
+In November 2020 Hush will join them in the bliss of privacy-by-default.
+
+Pirate was the very first blockchain to enforce privacy by default, while
+the Hush was the first pure Sapling blockchain, completely rid of the Sprout
+shielded addresses. Arrow is a newer cryptocoin which builds on these
+recent ideas and was the first pure Sapling blockchain to enforce
+privacy by default.
+
+Hush originally was based on Zcash 1.0.8 but in response to the Sprout CVE
+we migrated to Komodo as our upstream. The original blockchain was sunset
+at Block 500,000, snapshotted and airdropped to a new Pure Sapling blockchain.
+by giving users and miners a choice and in that way it was User Activated
+Hard Fork. The Hush community is on their second mainnet and tools
+such as Hush Smart Chains can spin up a new blockchain with a single command
+to experiment with new side-chains or launch new projects based on this
+tech.
+
+Hush Smart Chains support launching completely private blockchains with
+no public access, or hybrids, or public blockchains which can have
+delayed-Proof-of-Work protection.
+
+
+
