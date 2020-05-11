@@ -17,7 +17,7 @@ interface is lacking in Zcash, as well as P2P improvements.
 </a>
 
 The category of "Komodo Asset Chains" contains dozens of blockchains which
-have shielded transaction support. Hush Smart Chains are similar but focus
+have shielded transaction support. <a href="https://github.com/MyHush/hush-smart-chains" target="_blank">Hush Smart Chains</a> are similar but focus
 purely on Proof-of-Work (not Proof-of-Stake) use cases and are focused on
 privacy-by-default use cases. This is sometimes calles "z2z" because sending
 to zaddrs is required and sending from a zaddr to a transparent address is
