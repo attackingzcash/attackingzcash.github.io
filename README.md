@@ -27,7 +27,7 @@ theory.
 <img src="/img/attacking-zcash-protocol-abstract.png" height="75%" width="75%">
 </a>
 
-<a href="/attack-zcash-refs.png" target="_blank">
+<a href="/attacking-zcash-refs.png" target="_blank">
 <img src="/attacking-zcash-refs.png" height="75%" width="75%">
 </a>
 
