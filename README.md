@@ -33,10 +33,11 @@ There is very little recent information about the status of Zcash source code
 forks and to fix that we have a page dedicated to the <a href="/family-tree">Family Tree</a> of Zcash Protocol
 coins.
 
-## Join The Fun
+## Copyright
 
-Join #attackingzcash on Hush <a href="https://myhush.org/discord">Discord</a> or post
-some privacy memes to our <a href="https://myhush.org/telegram">Telegram</a> channel.
-Stalk our <a href="https://twitter.com/MyHushTeam">Twitter</a> to get the latest updates
-as they happen.
+All information and code is Copyright The Hush Developers 2020
+
+## License
+
+All code and data is released under the GNU Public License Version 3.
 
