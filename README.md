@@ -13,9 +13,9 @@ to privacy and Zcash Protocol.
 
 <table>
 <tr>
-<td><a href="/zec-graph-dot.png"><img src="/zec-graph.png"></a><br><a href="/zec.gv">Source</a></td> </tr>
+<td><a href="/zec-graph-dot.png"><img src="/zec-graph.png" height="50%" width="50%"></a><br><a href="/zec.gv">Source</a></td> </tr>
 <tr>
-<td><a href="/sietch-graphviz.png"><img src="/sietch-graphviz.png" height="70%" width="70%"></a><a href="/sietch.gv">Source</a></td>
+<td><a href="/sietch-graphviz.png"><img src="/sietch-graphviz.png" height="70%" width="70%"></a><br><a href="/sietch.gv">Source</a></td>
 </tr>
 </table>
 
