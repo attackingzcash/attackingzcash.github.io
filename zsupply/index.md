@@ -90,15 +90,14 @@ Since Hush has 8.06M HUSH in transparent addresses and currently 0.901M HUSH in 
 }
  ```
 
-## Addendum
-
-In the few minutes of writing this our shielded supply has "crashed" to 8.7%, still over
-100x more privacy than ZEC mainnet. This shows that it is a "live" statistic that changes
-with every block.
+## Future work
 
 The average zsupply is a very healthy metric to study for a Zcash Protocol coin. We can
 only assume that no websites render these stats because it so clearly points out that
 nobody uses the features which are the entire point of the existence of Zcash.
+
+Hush will be studying our own zsupply over time and that of all Zcash Protocol coins
+as we feel it directly shows if the blockchain is actually using privacy features.
 
 ## Thanks
 
