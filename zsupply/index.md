@@ -99,3 +99,7 @@ with every block.
 The average zsupply is a very healthy metric to study for a Zcash Protocol coin. We can
 only assume that no websites render these stats because it so clearly points out that
 nobody uses the features which are the entire point of the existence of Zcash.
+
+## Thanks
+
+Special thanks to CHMEX for providing some of the raw data for this report.
