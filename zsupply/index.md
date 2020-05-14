@@ -25,7 +25,7 @@ This command shows a transparent supply of 8.7M ZEC:
 ```
 and since ZEC has 9.1M current supply, that gives 0.49% shielded supply (zsupply percentage).
 
-This is unacceptable from an organization that spends over 1M USD per month? Why are funds not spent enforcing
+This is unacceptable from an organization that spends over 1M USD per month. Why are funds not spent enforcing
 privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. They are not *real* privacy.
 
 # Hush has 10.5% shielded supply currently
@@ -48,7 +48,7 @@ hush-cli gettxoutsetinfo
 }
 ```
 
-Since Hush has 8.06M HUSH in shielded addresses, that gives HUSH a zsupply % of 10.5%!
+Since Hush has 8.06M HUSH in transparent addresses and currently 0.901M HUSH in zaddrs, that gives HUSH a zsupply % of 10.5%!
 
 # z2z coins
 
@@ -89,3 +89,13 @@ Since Hush has 8.06M HUSH in shielded addresses, that gives HUSH a zsupply % of 
   "total_amount": 1694019.01903109
 }
  ```
+
+## Addendum
+
+In the few minutes of writing this our shielded supply has "crashed" to 8.7%, still over
+100x more privacy than ZEC mainnet. This shows that it is a "live" statistic that changes
+with every block.
+
+The average zsupply is a very healthy metric to study for a Zcash Protocol coin. We can
+only assume that no websites render these stats because it so clearly points out that
+nobody uses the features which are the entire point of the existence of Zcash.
