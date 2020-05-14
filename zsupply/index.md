@@ -1,5 +1,13 @@
 # Zcash Shielded Supply is less than 0.5% !
 
+## TLDR
+
+ * Hush has 215X the percentage of shielded funds!
+ * Hush mainnet has 215X more privacy than Zcash mainnet via this metric.
+ * NOTE: Data for all coins is as of May 14th 2020.
+
+## ZEC details
+
 This command shows a transparent supply of 8.7M ZEC:
 
 ```
@@ -15,18 +23,19 @@ This command shows a transparent supply of 8.7M ZEC:
 }
 # data from CHMEX
 ```
- and since ZEC has 9.1M current supply, that gives 0.49% shielded supply (zsupply percentage).
+and since ZEC has 9.1M current supply, that gives 0.49% shielded supply (zsupply percentage).
+
+This is unacceptable from an organization that spends over 1M USD per month? Why are funds not spent enforcing
+privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. They are not *real* privacy.
+
+# Hush has 10.5% shielded supply currently
+
+Hush is currently the only Zcash Protocol coin with a live-updating zsupply % on our website https://myhush.org/supply and
+Hush currently has the highest zsupply percentage of any non-z2z coin, behind <a href="https://pirate.black">Pirate</a> and <a href="https://arrowchain.io">Arrow</a>. 
+In November 2020 Hush transitions to z2z and has a countdown <a href="https://myhush.org/halving">timer</a>.
  
- This is unacceptable from an organization that spends over 1M USD per month? Why are funds not spent enforcing
- privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. They are not *real* privacy.
  
- # Hush has 10.5% shielded supply currently
- 
- We are currently the only Zcash Protocol coin with a live-updating zsupply % on our website https://myhush.org/supply and
- we currently have the highest zsupply % of any non-z2z coin, behind Pirate and Arrow. In November 2020 we transition to z2z and our countdown is here: https://myhush.org/halving
- 
- 
- ```
+```
 hush-cli gettxoutsetinfo
 {
   "height": 226953,
