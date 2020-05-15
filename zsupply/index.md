@@ -30,7 +30,7 @@ privacy on mainnet? Having such a tiny percentage of shielded funds renders them
 
 # Hush has 10.5% shielded supply currently
 
-Hush is currently the only Zcash Protocol coin with a live-updating zsupply % on our website https://myhush.org/supply and
+Hush is currently the only Zcash Protocol coin with a live-updating <a href="https://myhush.org/supply">zsupply</a> and
 Hush currently has the highest zsupply percentage of any non-z2z coin, behind <a href="https://pirate.black">Pirate</a> and <a href="https://arrowchain.io">Arrow</a>. 
 In November 2020 Hush transitions to z2z and has a countdown <a href="https://myhush.org/halving">timer</a>.
  
