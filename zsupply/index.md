@@ -26,7 +26,7 @@ This command shows a transparent supply of 8.7M ZEC:
 and since ZEC has 9.1M current supply, that gives 0.49% shielded supply (zsupply percentage).
 
 This is unacceptable from an organization that spends over 1M USD per month. Why are funds not spent enforcing
-privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. They are not *real* privacy.
+privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. Zcash mainnet does not have any *real* privacy.
 
 # Hush has 10.5% shielded supply currently
 
