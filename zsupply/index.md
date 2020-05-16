@@ -2,8 +2,8 @@
 
 ## TLDR
 
- * Hush has 215X the percentage of shielded funds!
- * Hush mainnet has 215X more privacy than Zcash mainnet via this metric.
+ * Hush has 21.5X the percentage of shielded funds!
+ * Hush mainnet has 21.5X more privacy than Zcash mainnet via this metric.
  * NOTE: Data for all coins is as of May 14th 2020.
 
 ## ZEC details
