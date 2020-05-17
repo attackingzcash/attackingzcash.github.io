@@ -2,8 +2,8 @@
 
 ## TLDR
 
- * Hush has 21.5X the percentage of shielded funds!
- * Hush mainnet has 21.5X more privacy than Zcash mainnet via this metric.
+ * Hush has ~2.15X the percentage of shielded funds!
+ * Hush mainnet has 2.15X more privacy than Zcash mainnet via this metric.
  * NOTE: Data for all coins is as of May 14th 2020.
 
 ## ZEC details
@@ -23,7 +23,7 @@ This command shows a transparent supply of 8.7M ZEC:
 }
 # data from CHMEX
 ```
-and since ZEC has 9.1M current supply, that gives 0.49% shielded supply (zsupply percentage).
+and since ZEC has 9.1M current supply, that gives 4.9% shielded supply (zsupply percentage).
 
 This is unacceptable from an organization that spends over 1M USD per month. Why are funds not spent enforcing
 privacy on mainnet? Having such a tiny percentage of shielded funds renders them mostly defenseless to blockchain analysis. Zcash mainnet does not have any *real* privacy.
