@@ -1,4 +1,4 @@
-# Zcash Shielded Supply is less than 0.5% !
+# Zcash Shielded Supply is less than 5% !
 
 ## TLDR
 
