@@ -24,7 +24,7 @@ theory.
 </table>
 
 <a href="/papers/attacking-zcash-for-fun-and-profit.pdf" target="_blank">
-<img src="/img/attacking-zcash-protocol-abstract.png" height="75%" width="75%">
+<img src="/img/abstract-0.5.png" height="75%" width="75%">
 </a>
 
 <a href="/attacking-zcash-refs.png" target="_blank">
