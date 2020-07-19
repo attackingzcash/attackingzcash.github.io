@@ -9,7 +9,7 @@
 
 ## Zcash Privacy in 5 Acts
 
-<img src="sarah-conner-dream-zcash.png">
+<a target="_blank" href="sarah-connor-dream-zcash.png"><img src="sarah-connor-dream-zcash.png"></a>
 
 ## What is an anonymity set?
 
