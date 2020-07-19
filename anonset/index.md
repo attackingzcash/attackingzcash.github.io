@@ -96,7 +96,7 @@ in plain Zcash Protocol.
 
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627?zec=milktoast" target="_blank">Sietch</a>
+cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627?zec=milktoast" target="_blank">Sietch</a> technology
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
