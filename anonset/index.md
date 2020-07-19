@@ -7,6 +7,10 @@
  * [Hush](https://myhush.org) is currently the only cryptocoin that can calculate anonset in real-time
  * Detailed current statistics
 
+## Zcash Privacy in 5 Acts
+
+<img src="sarah-conner-dream-zcash.png">
+
 ## What is an anonymity set?
 
 An anonymity set, also called a "shielded pool" in [Zcash Protocol](https://github.com/zcash/zips/blob/master/protocol/protocol.pdf), is the set of
