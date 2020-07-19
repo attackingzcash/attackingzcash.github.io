@@ -2,18 +2,21 @@
 
 ## TLDR
 
- * Most coins, including ZEC and Pirate cannot even correctly define anonymity set!
  * We exactly define anonymity sets (anonsets), AKA "shielded pools"
+ * Most/all privacy coins seem unaware of the actual definition
  * Hush is currently the only cryptocoin that can calculate anonset in real-time
+ * Detailed current statistics
 
 ## Definition
 
-The anonymity set is a set! Josh Swihart of Zcash Company does not seem to understand
+The anonymity set is a *set*, not a count! Josh Swihart of Zcash Company does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
 from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets.
+They are transaction counts, which is not related directly to anonsets at all. It's possible
+to have very high transaction counts and very small anonsets.
 
-They do not understand that the anonset can change with every block, and go up and down.
+Zcash Company does not understand that the anonset can change with every block, and go up and down.
 For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
