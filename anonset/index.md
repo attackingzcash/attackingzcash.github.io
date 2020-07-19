@@ -4,7 +4,7 @@
 
  * We exactly define anonymity sets (anonsets), AKA "shielded pools"
  * Most/all privacy coins seem unaware of the actual definition
- * [Hush](https://myhush.org) is currently the only cryptocoin that can calculate anonset in real-time
+ * <a href="https://myhush.org" target="_blank">Hush</a> is currently the only cryptocoin that can calculate anonset in real-time
  * Detailed current statistics
 
 ## Zcash Privacy in 5 Acts
@@ -13,7 +13,7 @@
 
 ## What is an anonymity set?
 
-An anonymity set, also called a "shielded pool" in [Zcash Protocol](https://github.com/zcash/zips/blob/master/protocol/protocol.pdf), is the set of
+An anonymity set, also called a "shielded pool" in <a href="https://github.com/zcash/zips/blob/master/protocol/protocol.pdf" target="_blank">Zcash Protocol</a> is the set of
 potential funds that could be part of a transaction. The anonymity set is exactly the feature
 which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
 funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
@@ -31,8 +31,8 @@ node level to measure them in real-time.
 
 ## Anonymity sets of various coins
 
-It's certain that [Pirate](https://pirate.black) (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
-are dumb-founded if you ask them to define what it is. It's likely that [Arrow](https://arrowchain.io) (ARW), a recent Pirate
+It's certain that <a href="https://pirate.black" target="_blank">Pirate</a> (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
+are dumb-founded if you ask them to define what it is. It's likely that <a href="https://arrowchain.io" target="_blank">Arrow</a> (ARW), a recent Pirate
 competitor, has a larger anonset than Hush as well. This is a basic fact of z2z-only chains: they will
 almost always have higher zaddr usage percentage and anonsets, since it's enforced at a consensus level.
 
@@ -49,7 +49,7 @@ are we really creating?
 
 ## Zcash + Hush Anonymity Sets
 
-The anonymity set is a *set*, not a count! [Josh Swihart](https://twitter.com/jswihart/status/1273022506014834688) of Zcash Company does not seem to understand
+The anonymity set is a *set*, not a count! <a href="https://twitter.com/jswihart/status/1273022506014834688" target="_blank">Josh Swihart, Head of Growth at Zcash Company</a> does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
 from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets counts.
@@ -92,7 +92,7 @@ in plain Zcash Protocol.
 
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to ever have this ability. Additionally, the custom [Sietch](https://eprint.iacr.org/2020/627) technology invented
+cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627" target="_blank">Sietch</a>
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
@@ -111,7 +111,7 @@ be retrieved via:
     hush-cli getchaintxstats
 ```
 
-This will return a large amount of [JSON data](https://gist.github.com/leto/8c02406464d61b43c2e5f0bbd9b8311d) where the current anonset size will be returned as
+This will return a large amount of <a href="https://gist.github.com/leto/8c02406464d61b43c2e5f0bbd9b8311d" target="_blank">JSON data</a> where the current anonset size will be returned as
 `shielded_pool_size` and can be verified as the differece between `shielded_outputs` and
 `shielded_spends` .
 
