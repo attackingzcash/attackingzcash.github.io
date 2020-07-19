@@ -18,7 +18,7 @@
 An anonymity set, also called a "shielded pool" in <a href="https://github.com/zcash/zips/blob/master/protocol/protocol.pdf?zec=milktoast" target="_blank">Zcash Protocol</a> is the set of
 potential funds that could be part of a transaction. The anonymity set is exactly the feature
 which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
-funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
+funds are spent from a shielded address (<a href="https://github.com/MyHush/terminology#zaddr" target="_blank">zaddr</a>), zero-knowledge mathematics is used to spend
 the funds without leaking the metadata of *which* funds are being spent or where they came from.
 
 Cryptocoins with very small anonymity sets seem like they have privacy, but in practice, they are
