@@ -4,12 +4,12 @@
 
  * We exactly define anonymity sets (anonsets), AKA "shielded pools"
  * Most/all privacy coins seem unaware of the actual definition
- * Hush is currently the only cryptocoin that can calculate anonset in real-time
+ * [Hush](https://myhush.org) is currently the only cryptocoin that can calculate anonset in real-time
  * Detailed current statistics
 
 ## What is an anonymity set?
 
-An anonymity set, also called a "shielded pool" in Zcash Protocol world, is the set of
+An anonymity set, also called a "shielded pool" in [Zcash Protocol](https://github.com/zcash/zips/blob/master/protocol/protocol.pdf), is the set of
 potential funds that could be part of a transaction. The anonymity set is exactly the feature
 which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
 funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
