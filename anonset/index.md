@@ -150,7 +150,8 @@ supported by Chainanlysis, Elliptic and most likely Ciphertrace.
 
   * Why doesn't Zcash provide these stats in real-time?
 
-The author proposes they realize it would be too depressing to see how small their anonset is, after four years. This is why Josh Swihart lies with statistics and tells investors whatever they want to hear.
+The author proposes they realize it would bad for marketing to broadcast how small their anonset is, after four years. This is why Josh Swihart lies with statistics and tells investors whatever they want to hear, including only showing some statistics which
+put Zcash in a positive light.
 
   * Is Josh Swihart commiting financial fraud by knowingly misrepresenting ZEC mainnet statistics?
 
@@ -170,11 +171,14 @@ include but are not limited to:
   * ATF
   * DEA
   * IRS
-  * US Secret Service
-  * US Federal Marshalls
   * Department Of Homeland Security (includes ICE)
   * Interpol
   * Europol
-  * State police
-  * Local police
+  * US Secret Service
+  * US Federal Marshalls
+  * US State police
+  * US Local police
+
+As proof of this, we have <a href="https://twitter.com/dukeleto/status/1267849131025989633" target="_blank">documented</a> a <a href="https://www.bitchute.com/video/PWXU7D4VV0lB/" target="_blank">video</a> which was deleted from YouTube and describes
+how Zcash Company works with these organizations. It is a presentation from ChainAnalysis and Ciphertrace to Law Enforcement agencies, describing their technology for de-anonymizing privacy coins.
 
