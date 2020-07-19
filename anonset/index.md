@@ -64,6 +64,12 @@ incorrectly-defined data. For about 17 months, the blue bars of Sprout shielded 
 not increased or decreased noticeably but stay under 0.5% deviation month to month. This is almost
 certainly automated software by Zcash Sprout fund owners to increase shielded statistics.
 
+In the 30 days leading up to July 19th 2020, Hush had 40,180 Sapling shielded transactions, just over
+the amount Zcash claims, of 38,016. We remind users that Hush was the very first Zcash Protocol coin
+to remove the old Sprout addresses, which had a severe [inflation bug CVE-2019-7167](https://myhush.org/sapling/). Hush has no Sprout transactions
+in it's history and in fact almost all Sprout code has been deleted from the Hush codebase, to reduce
+potential attack surface of future bugs. It is the only coin which is able to claim these feats.
+
 ## Anonymity Set Size
 
 The *size* of the anonset is a count, and we can measure it at every block with a very simple
