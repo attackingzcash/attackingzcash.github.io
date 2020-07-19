@@ -56,13 +56,15 @@ Zcash Company does not understand that the anonset can change with every block, 
 For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
-<img src="zcash-ztxs.png">
+<a target="_blank" href="zcash-ztxs.png"><img src="zcash-ztxs.png" width="50%" height="50%"></a>
 
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
 Additionally, Zcash Company is running test scripts behind the scenes to massage their
 incorrectly-defined data. For about 17 months, the blue bars of Sprout shielded transactions have
 not increased or decreased noticeably but stay under 0.5% deviation month to month. This is almost
-certainly automated software by Zcash Sprout fund owners to increase shielded statistics
+certainly automated software by Zcash Sprout fund owners to increase shielded statistics.
+
+## Anonymity Set Size
 
 The *size* of the anonset is a count, and we can measure it at every block with a very simple
 equation:
@@ -72,9 +74,15 @@ equation:
     size(anonset) = outputs - spends
 ```
 
+at a given block height `H`. It's good to remember, anonsets are functions of block height!
+They go up and down with time. They go up when more outputs are created then inputs spent.
+The opposite happens, the anonymity set *goes down* when more spends are consumed and sent
+to a smaller number of outputs. Both of these types of shielded transactions happen normally
+in plain Zcash Protocol.
+
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to ever have this ability. Additionally, the custom Sietch technology invented
+cryptocoin to ever have this ability. Additionally, the custom [Sietch](https://eprint.iacr.org/2020/627) technology invented
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
@@ -112,7 +120,7 @@ are lost.
 
 ## Comparing to Monero/CryptoNote coins
 
-The way privacy works in [Monero](https://getmonero.org)/CryptoNote coins is different and the way anonymity set
+The way privacy works in [Monero](https://getmonero.org)/[CryptoNote](https://cryptonote.org/) coins is different and the way anonymity set
 is defined is different. With Monero, about 10 or so "mixins" are added to each transaction,
 so that it's unclear exactly which funds are being spent. So the anonymity set of every Monero
 transaction is a different small set of about 10, which constantly changes.
@@ -128,11 +136,31 @@ supported by Chainanlysis and Ciphertrace.
 
   * Why doesn't Zcash provide these stats in real-time?
 
-The author proposes they realize it would be too depressing to see how small their anonset is, after four years.
-This is why Josh Swihart lies with statistics and tells investors whatever they want to hear.
+The author proposes they realize it would be too depressing to see how small their anonset is, after four years. This is why Josh Swihart lies with statistics and tells investors whatever they want to hear.
 
   * Is Josh Swihart commiting financial fraud by knowingly misrepresenting ZEC mainnet statistics?
 
-The author believes Swihart is mostly ignorant of how the internals work but also is dancing on the line of
-outright fraudulent numbers about Zcash mainnet. This report hopes to clarify these misunderstandings.
+The author believes Electric Coin Company is purposefully misrepresenting numbers, grossly inept, or both.
+
+# Conclusions
+
+Zcash investors are being grossly lied to, with cooked statistics that border on outright lies, as well
+as lies of omission about how the surveillance tech of ChainAnalysis and Ciphertrace actually work.
+
+Electric Coin Company is part of the Military-Industrial-Surveillance complex, which involves all blockchain
+analysis companies and the Law Enforcement/Government entities which pay them like an IT department. These
+include but are not limited to:
+
+  * FBI
+  * CIA
+  * ATF
+  * DEA
+  * IRS
+  * US Secret Service
+  * US Federal Marshalls
+  * Department Of Homeland Security (includes ICE)
+  * Interpol
+  * Europol
+  * State police
+  * Local police
 
