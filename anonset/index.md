@@ -7,7 +7,43 @@
  * Hush is currently the only cryptocoin that can calculate anonset in real-time
  * Detailed current statistics
 
-## Definition
+## What is an anonymity set?
+
+An anonymity set, also called a "shielded pool" in Zcash Protocol world, is the set of
+potential funds that could be part of a transaction. The anonymity set is exactly the feature
+which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
+funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
+the funds without leaking the metadata of *which* funds are being spent or where they came from.
+
+Cryptocoins with very small anonymity sets seem like they have privacy, but in practice, they are
+like a football stadium with only a few dozen people in the seats. All of them are very easy to
+identify because there is no "crowd to hide in". After four years, Zcash mainnet has a very small
+anonymity set and because they do not publish correct statistics about it, nor provide tools to
+measure it in real-time.
+
+It's likely that after just 1.5 years on our current mainnet, HUSH has a larger anonset than ZEC, but
+again, it's unclear because they do not publish correct statistics nor provide tools at the full
+node level to measure them in real-time.
+
+## Anonymity sets of various coins
+
+It's certain that [Pirate](https://pirate.black) (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
+are dumb-founded if you ask them to define what it is. It's likely that [Arrow](https://arrowchain.io) (ARW), a recent Pirate
+competitor, has a larger anonset than Hush as well. This is a basic fact of z2z-only chains: they will
+almost always have higher zaddr usage percentage and anonsets, since it's enforced at a consensus level.
+
+In terms of Zcash Protocol coins which do not (yet) enforce z2z, the author believes Hush is currently
+the coin with highest zaddr usage ([14.5% as of July 19th 2020](https://myhush.org/supply)) and largest anonset (about 93,000). 
+When Hush enforces shielded only transaction in November 2020 at [Block 340,000](https://myhush.org/halving/) , we will join Pirate and
+Arrow in being the only enforced-privcay Zcash Protocol coins.
+
+Since no other coins can measure theirs in real-time, we implore Zcash, Pirate, Arrow and all Zcash Protocol coins to port the
+Hush Shielded Index `-zindex` so that we can have industry-wide comparison of our privacy, in real-time. If we cannot
+give our users and investors real-time detailed data about our privacy metrics, what kind of technology
+are we really creating?
+
+
+## Zcash + Hush Anonymity Sets
 
 The anonymity set is a *set*, not a count! Josh Swihart of Zcash Company does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
@@ -38,6 +74,11 @@ cryptocoin to ever have this ability. Additionally, the custom Sietch technology
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
+Hush developers also believe that the Hush anonset *grows faster* than the Zcash, Arrow and
+potentially the Pirate anonset. Since Hush migrated to a second mainnet about 1.5 years ago,
+our statistics have had much less time to grow, compared to Pirate and Zcash mainnets. Our
+Shielded Index let's us study this in real-time.
+
 ## Hush details
 
 When the `-zindex` CLI argument is enabled, the Shielded Index keeps tracks of many
@@ -48,7 +89,7 @@ be retrieved via:
     hush-cli getchaintxstats
 ```
 
-This will return a large amount of JSON, where the current anonset size will be returned as
+This will return a large amount of [JSON data](https://gist.github.com/leto/8c02406464d61b43c2e5f0bbd9b8311d) where the current anonset size will be returned as
 `shielded_pool_size` and can be verified as the differece between `shielded_outputs` and
 `shielded_spends` .
 
@@ -67,7 +108,7 @@ are lost.
 
 ## Comparing to Monero/CryptoNote coins
 
-The way privacy works in Monero/CryptoNote coins is different and the way anonymity set
+The way privacy works in [Monero](https://getmonero.org)/CryptoNote coins is different and the way anonymity set
 is defined is different. With Monero, about 10 or so "mixins" are added to each transaction,
 so that it's unclear exactly which funds are being spent. So the anonymity set of every Monero
 transaction is a different small set of about 10, which constantly changes.
