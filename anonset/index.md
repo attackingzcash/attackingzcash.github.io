@@ -9,7 +9,9 @@
 
 ## Zcash Privacy in 5 Acts
 
+<center>
 <a target="_blank" href="sarah-connor-dream-zcash.png"><img src="sarah-connor-dream-zcash.png"></a>
+</center>
 
 ## What is an anonymity set?
 
@@ -60,7 +62,9 @@ Zcash Company does not understand that the anonset can change with every block, 
 For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
+<center>
 <a target="_blank" href="zcash-ztxs.png"><img src="zcash-ztxs.png" width="50%" height="50%"></a>
+</center>
 
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
 Additionally, Zcash Company is running test scripts behind the scenes to massage their
