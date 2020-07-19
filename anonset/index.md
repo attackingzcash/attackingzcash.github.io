@@ -10,12 +10,12 @@
 ## Zcash Privacy in 5 Acts
 
 <center>
-<a target="_blank" href="sarah-connor-dream-zcash.png"><img src="sarah-connor-dream-zcash.png"></a>
+<a target="_blank" href="sarah-connor-dream-zcash.png?zec=milktoast"><img src="sarah-connor-dream-zcash.png?zec=milktoast"></a>
 </center>
 
 ## What is an anonymity set?
 
-An anonymity set, also called a "shielded pool" in <a href="https://github.com/zcash/zips/blob/master/protocol/protocol.pdf" target="_blank">Zcash Protocol</a> is the set of
+An anonymity set, also called a "shielded pool" in <a href="https://github.com/zcash/zips/blob/master/protocol/protocol.pdf?zec=milktoast" target="_blank">Zcash Protocol</a> is the set of
 potential funds that could be part of a transaction. The anonymity set is exactly the feature
 which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
 funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
@@ -33,14 +33,14 @@ node level to measure them in real-time.
 
 ## Anonymity sets of various coins
 
-It's certain that <a href="https://pirate.black" target="_blank">Pirate</a> (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
-are dumb-founded if you ask them to define what it is. It's likely that <a href="https://arrowchain.io" target="_blank">Arrow</a> (ARW), a recent Pirate
+It's certain that <a href="https://pirate.black/?zec=milktoast" target="_blank">Pirate</a> (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
+are dumb-founded if you ask them to define what it is. It's likely that <a href="https://arrowchain.io/?zec=milktoast" target="_blank">Arrow</a> (ARW), a recent Pirate
 competitor, has a larger anonset than Hush as well. This is a basic fact of z2z-only chains: they will
 almost always have higher zaddr usage percentage and anonsets, since it's enforced at a consensus level.
 
 In terms of Zcash Protocol coins which do not (yet) enforce z2z, the author believes Hush is currently
-the coin with highest zaddr usage ([14.5% as of July 19th 2020](https://myhush.org/supply)) and largest anonset (about 93,000). 
-When Hush enforces shielded only transaction in November 2020 at [Block 340,000](https://myhush.org/halving/) , we will join Pirate and
+the coin with highest zaddr usage ([14.5% as of July 19th 2020](https://myhush.org/supply/?zec=milktoast)) and largest anonset (about 93,000). 
+When Hush enforces shielded only transaction in November 2020 at [Block 340,000](https://myhush.org/halving/?zec=milktoast) , we will join Pirate and
 Arrow in being the only enforced-privcay Zcash Protocol coins.
 
 Since no other coins can measure theirs in real-time, we implore Zcash, Pirate, Arrow and all Zcash Protocol coins to port the
@@ -51,7 +51,7 @@ are we really creating?
 
 ## Zcash + Hush Anonymity Sets
 
-The anonymity set is a *set*, not a count! <a href="https://twitter.com/jswihart/status/1273022506014834688" target="_blank">Josh Swihart, Head of Growth at Zcash Company</a> does not seem to understand
+The anonymity set is a *set*, not a count! <a href="https://twitter.com/jswihart/status/1273022506014834688?zec=milktoast" target="_blank">Josh Swihart, Head of Growth at Zcash Company</a> does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
 from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets counts.
@@ -63,7 +63,7 @@ For instance, if I use 10 shielded spends but only create 1 shielded output, tha
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
 <center>
-<a target="_blank" href="zcash-ztxs.png"><img src="zcash-ztxs.png" width="50%" height="50%"></a>
+<a target="_blank" href="zcash-ztxs.png?zec=milktoast"><img src="zcash-ztxs.png?zec=milktoast" width="50%" height="50%"></a>
 </center>
 
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
@@ -74,7 +74,7 @@ certainly automated software by Zcash Sprout fund owners to increase shielded st
 
 In the 30 days leading up to July 19th 2020, Hush had 40,180 Sapling shielded transactions, just over
 the amount Zcash claims, of 38,016. We remind users that Hush was the very first Zcash Protocol coin
-to remove the old Sprout addresses, which had a severe [inflation bug CVE-2019-7167](https://myhush.org/sapling/). Hush has no Sprout transactions
+to remove the old Sprout addresses, which had a severe [inflation bug CVE-2019-7167](https://myhush.org/sapling/?zec=milktoast). Hush has no Sprout transactions
 in it's history and in fact almost all Sprout code has been deleted from the Hush codebase, to reduce
 potential attack surface of future bugs. It is the only coin which is able to claim these feats.
 
@@ -96,7 +96,7 @@ in plain Zcash Protocol.
 
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627" target="_blank">Sietch</a>
+cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627?zec=milktoast" target="_blank">Sietch</a>
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
