@@ -11,9 +11,12 @@
 The anonymity set is a set! Josh Swihart of Zcash Company does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
-from Swihart + ZEC related to transaction counts and *NOT* anonymity sets.
+from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets.
 
 They do not understand that the anonset can change with every block, and go up and down.
+For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
+will reduce the size of the anonset by 9, since 10 - 1 = 9.
+
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
 Additionally, Zcash Company is running test scripts behind the scenes to massage their
 incorrectly-defined data.
@@ -28,7 +31,9 @@ equation:
 
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to every have this ability.
+cryptocoin to ever have this ability. Additionally, the custom Sietch technology invented
+by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
+Hush mainnet, the size of our anonset can only stay the same, or increase.
 
 ## Hush details
 
@@ -39,6 +44,10 @@ be retrieved via:
 ```
     hush-cli getchaintxstats
 ```
+
+This will return a large amount of JSON, where the current anonset size will be returned as
+`shielded_pool_size` and can be verified as the differece between `shielded_outputs` and
+`shielded_spends` .
 
 ## Current Stats
 
