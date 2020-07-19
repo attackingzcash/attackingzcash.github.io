@@ -143,7 +143,7 @@ The author believes that Zcash Protocol anonymity sets are stronger, but concede
 has a much stronger dedication to privacy than Zcash and has better GUI wallets with great UI/UX.
 
 For these reasons, Hush considers Monero to be it's main competition, as Zcash mainnet is now
-supported by Chainanlysis and Ciphertrace.
+supported by Chainanlysis, Elliptic and most likely Ciphertrace.
 
 
 ## Questions
@@ -159,7 +159,7 @@ The author believes Electric Coin Company is purposefully misrepresenting number
 # Conclusions
 
 Zcash investors are being grossly lied to, with cooked statistics that border on outright lies, as well
-as lies of omission about how the surveillance tech of ChainAnalysis and Ciphertrace actually work.
+as lies of omission about how the surveillance tech of ChainAnalysis, Elliptic and Ciphertrace actually work.
 
 Electric Coin Company is part of the Military-Industrial-Surveillance complex, which involves all blockchain
 analysis companies and the Law Enforcement/Government entities which pay them like an IT department. These
