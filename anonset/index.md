@@ -45,10 +45,10 @@ are we really creating?
 
 ## Zcash + Hush Anonymity Sets
 
-The anonymity set is a *set*, not a count! Josh Swihart of Zcash Company does not seem to understand
+The anonymity set is a *set*, not a count! [Josh Swihart](https://twitter.com/jswihart/status/1273022506014834688) of Zcash Company does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
-from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets.
+from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets counts.
 They are transaction counts, which is not related directly to anonsets at all. It's possible
 to have very high transaction counts and very small anonsets.
 
@@ -56,9 +56,13 @@ Zcash Company does not understand that the anonset can change with every block, 
 For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
+<img src="zcash-ztxs.png">
+
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
 Additionally, Zcash Company is running test scripts behind the scenes to massage their
-incorrectly-defined data.
+incorrectly-defined data. For about 17 months, the blue bars of Sprout shielded transactions have
+not increased or decreased noticeably but stay under 0.5% deviation month to month. This is almost
+certainly automated software by Zcash Sprout fund owners to increase shielded statistics
 
 The *size* of the anonset is a count, and we can measure it at every block with a very simple
 equation:
