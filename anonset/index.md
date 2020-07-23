@@ -85,7 +85,7 @@ equation:
 
 
 ```
-    size(anonset) = outputs - spends
+    size(anonset) = size(outputs) - size(spends)
 ```
 
 at a given block height `H`. It's good to remember, anonsets are functions of block height!
