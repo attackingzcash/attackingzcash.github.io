@@ -75,9 +75,16 @@ Not only does this happen once, but it happens *continuously*, a stream of metad
 not change their zaddr. Zcash chose to do this *on purpose* for supply audit reasons, but it ends up ruining any kind of 
 improvement to privacy.
 
+## Shielded Mining Pool Payouts
+
+We want to clarify that we are talking about solo miners and mining pools receiving block rewards directly from the blockchain,
+not pool miners getting payouts. Getting paid out to a shielded address is very good for privacy! Everything here is specific
+to Shielded Coinbase, and miners who are getting payouts to zaddrs all good. Those payouts do not expose their addresses publicly, unlike Shielded Coinbase.
+
 ## Conclusions
 
- * Don't mine directly to a zaddr on any blockchain.
+ * Don't solo mine directly to a zaddr on any blockchain.
  * Mine to a taddr, then send to a zaddr, while keeping your zaddr private.
  * Question anything coming from Zcash Foundation + ECC
  * Hush and Komodo will not implement Shielded Coinbase, it's bad for privacy
+ * If Zcash truly cared about privacy, they would enforce usage of shielded addresses
