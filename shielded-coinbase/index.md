@@ -60,7 +60,7 @@ regression rather than improvement.
 Not only does using this "feature/bug" from ECC hurt the individual miner, but it hurts the entire privacy of Zcash mainnet.
 As a chain analysis company, Shielded Coinbase provide extra metadata to link owners of taddrs and zaddrs together.
 
-Normally, a miner would miner to a taddr, *then* send to a zaddr. This is a very privacy-perserving process, as the zaddr
+Normally, a miner receives funds to a taddr, *then* send to a zaddr. This is a very privacy-perserving process, as the zaddr
 NEVER APPEARS PUBLICLY.
 
 With ZIP213, a miner PUBLISHES their zaddr (something the Hush community considers extremely bad for privacy) and then procedes
