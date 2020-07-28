@@ -5,7 +5,7 @@
  * Shielded Coinbase (ZIP213) is new Zcash Protocol consensus change
  * It allows mining directly to a shielded address
  * This sounds good at first, but has many problems
- * It actually reduces privacy of miners, as Duke Leto pointed out to the creator of Zcash Protocol
+ * It actually reduces privacy of miners, as [Duke Leto pointed out to the creator of Zcash Protocol](https://twitter.com/feministPLT/status/1264858630068875264)
  * Zcash is marketing this as a new feature, when it's really a bug
 
 ## What is Shielded Coinbase?
@@ -22,6 +22,8 @@ instead of a transparent address (taddr). Sounds like a huge privacy win, right?
 But then with further perusal, we will find that because of *how* Zcash Company chose to implement this feature
 and because of some previous technical limitations, this feature will actually *reduce* privacy of the individual
 miner and the shielded pool.
+
+<img src="zip213.png">
 
 ## Why does Shielded Coinbase reduce miner privacy?
 
