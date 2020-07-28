@@ -101,5 +101,5 @@ to Shielded Coinbase, and miners who are getting payouts to zaddrs all good. Tho
  * Don't solo mine directly to a zaddr on any blockchain.
  * Mine to a taddr, then send to a zaddr, while keeping your zaddr private.
  * Question anything coming from Zcash Foundation + ECC
- * Hush and Komodo will not implement Shielded Coinbase, it's bad for privacy
+ * <a target="_blank" href="https://myhush.org">Hush</a> and <a target="_blank" href="https://komodoplatform.com">Komodo</a> will not implement Shielded Coinbase, it's bad for privacy
  * If Zcash truly cared about privacy, they would enforce usage of shielded addresses
