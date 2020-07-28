@@ -62,11 +62,16 @@ Normally, a miner would miner to a taddr, *then* send to a zaddr. This is a very
 NEVER APPEARS PUBLICLY.
 
 With ZIP213, a miner PUBLISHES their zaddr (something the Hush community considers extremely bad for privacy) and then procedes
-to publicize various transactions that mine finds to that zaddr. It's similar to saying "this is my z2z transaction id and also
+to publicize various transactions that miner finds to that zaddr. It's similar to saying "this is my z2z transaction id and also
 the amounts that were involved and the address", which basically removes all privacy.
 
+Even if funds are then moved again to another zaddress, chain analysis companies will use this historical data to correlate
+which miners sold to which exchanges that were then used later on in various transactions. The metadata infects the blockchain
+history *forever*.
+
 Not only does this happen once, but it happens *continuously*, a stream of metadata leakage, as a miner uses ZIP213 and does
-not change their zaddr.
+not change their zaddr. Zcash chose to do this *on purpose* for supply audit reasons, but it ends up ruining any kind of 
+improvement to privacy.
 
 ## Conclusions
 
