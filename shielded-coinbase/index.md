@@ -2,7 +2,7 @@
 
 ## TLDR
 
- * Shielded Coinbase (ZIP213) is new Zcash Protocol consensus change
+ * Shielded Coinbase (<a href="https://zips.z.cash/zip-0213" target="_blank">ZIP213</a>) is new Zcash Protocol consensus change
  * It allows mining directly to a shielded address
  * This sounds good at first, but has many problems
  * It actually reduces privacy of miners, as [Duke Leto pointed out to the creator of Zcash Protocol](https://twitter.com/feministPLT/status/1264858630068875264)
@@ -31,6 +31,7 @@ At least two fundamental reasons conspire together to forcefully leak metadata w
 
   * Miners must hardcode their zaddr via the command-line
   * Miners must make their zaddr public, in the block metadata
+  * Active attacks against zaddrs require knowing the zaddr
 
 Because miners must set their zaddr when starting their node, it will be fixed until the next time the stop and restart.
 This encourages miners to set one zaddr and mine to it for long periods of time, since changing it would require
@@ -40,6 +41,20 @@ not use the feature correctly.
 
 The first issue could be fixed with technical changes, but most likely will not, because ZIP213 was meant mostly
 for marketing purposes and not for increasing chain privacy.
+
+Lastly, various attacks against shielded addresses exist, but usually require *knowing* the address, so transactions
+can be sent to it. Shielded Coinbase forces a miner to publicize one of their addresses.
+
+The author of Zcash Protocol offers the advice to use only one zaddr for mining and then use private zaddrs for other
+uses. This is not as private as you could be, since in the past there was a CVE which could identify the IP address
+of a zaddress. If another similar bug happens, which is very possible, IP addresses of miner zaddrs could be correlated
+to IP addresses of the other zaddrs, proving they are owned by the same person who is running a node at that IP address.
+To address this, miners using ZIP213 should use completely distinct wallets with different IP addresses for maximum
+privacy. As we all know users of software do the least work to get the job done, these things won't happen and miners
+are likely to use the tech in a *privacy-destroying* manner.
+
+This is why zaddrs should *never* be made public, and they should only be given to parties that must absolotutely know them,
+i.e. people sending funds to that address.
 
 ## Shielded Coinbase Is Optimized for Auditability
 
