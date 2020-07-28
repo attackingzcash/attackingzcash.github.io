@@ -4,15 +4,21 @@
 
  * We exactly define anonymity sets (anonsets), AKA "shielded pools"
  * Most/all privacy coins seem unaware of the actual definition
- * [Hush](https://myhush.org) is currently the only cryptocoin that can calculate anonset in real-time
+ * <a href="https://myhush.org" target="_blank">Hush</a> is currently the only cryptocoin that can calculate anonset in real-time
  * Detailed current statistics
+
+## Zcash Privacy in 5 Acts
+
+<center>
+<a target="_blank" href="sarah-connor-dream-zcash.png?zec=milktoast"><img src="sarah-connor-dream-zcash.png?zec=milktoast"></a>
+</center>
 
 ## What is an anonymity set?
 
-An anonymity set, also called a "shielded pool" in [Zcash Protocol](https://github.com/zcash/zips/blob/master/protocol/protocol.pdf), is the set of
+An anonymity set, also called a "shielded pool" in <a href="https://github.com/zcash/zips/blob/master/protocol/protocol.pdf?zec=milktoast" target="_blank">Zcash Protocol</a> is the set of
 potential funds that could be part of a transaction. The anonymity set is exactly the feature
 which adds privacy to a privacy coin. When a Zcash Protocol transaction is made, and shielded
-funds are spent from a shielded address (zaddr), zero-knowledge mathematics is used to spend
+funds are spent from a shielded address (<a href="https://github.com/MyHush/terminology#zaddr" target="_blank">zaddr</a>), zero-knowledge mathematics is used to spend
 the funds without leaking the metadata of *which* funds are being spent or where they came from.
 
 Cryptocoins with very small anonymity sets seem like they have privacy, but in practice, they are
@@ -27,14 +33,14 @@ node level to measure them in real-time.
 
 ## Anonymity sets of various coins
 
-It's certain that [Pirate](https://pirate.black) (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
-are dumb-founded if you ask them to define what it is. It's likely that [Arrow](https://arrowchain.io) (ARW), a recent Pirate
+It's certain that <a href="https://pirate.black/?zec=milktoast" target="_blank">Pirate</a> (ARRR) has the largest Zcash Protocol anonymity set, even though most community members
+are dumb-founded if you ask them to define what it is. It's likely that <a href="https://arrowchain.io/?zec=milktoast" target="_blank">Arrow</a> (ARW), a recent Pirate
 competitor, has a larger anonset than Hush as well. This is a basic fact of z2z-only chains: they will
 almost always have higher zaddr usage percentage and anonsets, since it's enforced at a consensus level.
 
 In terms of Zcash Protocol coins which do not (yet) enforce z2z, the author believes Hush is currently
-the coin with highest zaddr usage ([14.5% as of July 19th 2020](https://myhush.org/supply)) and largest anonset (about 93,000). 
-When Hush enforces shielded only transaction in November 2020 at [Block 340,000](https://myhush.org/halving/) , we will join Pirate and
+the coin with highest zaddr usage ([14.5% as of July 19th 2020](https://myhush.org/supply/?zec=milktoast)) and largest anonset (about 93,000). 
+When Hush enforces shielded only transaction in November 2020 at [Block 340,000](https://myhush.org/halving/?zec=milktoast) , we will join Pirate and
 Arrow in being the only enforced-privcay Zcash Protocol coins.
 
 Since no other coins can measure theirs in real-time, we implore Zcash, Pirate, Arrow and all Zcash Protocol coins to port the
@@ -45,7 +51,7 @@ are we really creating?
 
 ## Zcash + Hush Anonymity Sets
 
-The anonymity set is a *set*, not a count! [Josh Swihart](https://twitter.com/jswihart/status/1273022506014834688) of Zcash Company does not seem to understand
+The anonymity set is a *set*, not a count! <a href="https://twitter.com/jswihart/status/1273022506014834688?zec=milktoast" target="_blank">Josh Swihart, Head of Growth at Zcash Company</a> does not seem to understand
 the difference between a daily count of transactions and the current set of privacy.
 They are completely different, yet he talks as if they are the same. All graphics
 from Swihart and Zcash Company related to transaction counts are *NOT* anonymity sets counts.
@@ -56,13 +62,21 @@ Zcash Company does not understand that the anonset can change with every block, 
 For instance, if I use 10 shielded spends but only create 1 shielded output, that transaction
 will reduce the size of the anonset by 9, since 10 - 1 = 9.
 
-<a target="_blank" href="zcash-ztxs.png"><img src="zcash-ztxs.png" width="50%" height="50%"></a>
+<center>
+<a target="_blank" href="zcash-ztxs.png?zec=milktoast"><img src="zcash-ztxs.png?zec=milktoast" width="50%" height="50%"></a>
+</center>
 
 They show graphs of counts monotonically going up, attempting to lie (badly) with statistics.
 Additionally, Zcash Company is running test scripts behind the scenes to massage their
 incorrectly-defined data. For about 17 months, the blue bars of Sprout shielded transactions have
 not increased or decreased noticeably but stay under 0.5% deviation month to month. This is almost
 certainly automated software by Zcash Sprout fund owners to increase shielded statistics.
+
+In the 30 days leading up to July 19th 2020, Hush had 40,180 Sapling shielded transactions, just over
+the amount Zcash claims, of 38,016. We remind users that Hush was the very first Zcash Protocol coin
+to remove the old Sprout addresses, which had a severe [inflation bug CVE-2019-7167](https://myhush.org/sapling/?zec=milktoast). Hush has no Sprout transactions
+in it's history and in fact almost all Sprout code has been deleted from the Hush codebase, to reduce
+potential attack surface of future bugs. It is the only coin which is able to claim these feats.
 
 ## Anonymity Set Size
 
@@ -71,7 +85,7 @@ equation:
 
 
 ```
-    size(anonset) = outputs - spends
+    size(anonset) = size(outputs) - size(spends)
 ```
 
 at a given block height `H`. It's good to remember, anonsets are functions of block height!
@@ -82,7 +96,7 @@ in plain Zcash Protocol.
 
 At every block, the Hush full node keeps track of all shielded spends and outputs, so it can
 calculate the size of the anonset at any block height. To our knowledge, Hush is the first
-cryptocoin to ever have this ability. Additionally, the custom [Sietch](https://eprint.iacr.org/2020/627) technology invented
+cryptocoin to ever have this ability. Additionally, the custom <a href="https://eprint.iacr.org/2020/627?zec=milktoast" target="_blank">Sietch</a> technology
 by Hush Developers ensures that no Hush transaction can reduce the size of the anonset. On
 Hush mainnet, the size of our anonset can only stay the same, or increase.
 
@@ -101,7 +115,7 @@ be retrieved via:
     hush-cli getchaintxstats
 ```
 
-This will return a large amount of [JSON data](https://gist.github.com/leto/8c02406464d61b43c2e5f0bbd9b8311d) where the current anonset size will be returned as
+This will return a large amount of <a href="https://gist.github.com/leto/8c02406464d61b43c2e5f0bbd9b8311d" target="_blank">JSON data</a> where the current anonset size will be returned as
 `shielded_pool_size` and can be verified as the differece between `shielded_outputs` and
 `shielded_spends` .
 
@@ -129,14 +143,15 @@ The author believes that Zcash Protocol anonymity sets are stronger, but concede
 has a much stronger dedication to privacy than Zcash and has better GUI wallets with great UI/UX.
 
 For these reasons, Hush considers Monero to be it's main competition, as Zcash mainnet is now
-supported by Chainanlysis and Ciphertrace.
+supported by Chainanlysis, Elliptic and most likely Ciphertrace.
 
 
 ## Questions
 
   * Why doesn't Zcash provide these stats in real-time?
 
-The author proposes they realize it would be too depressing to see how small their anonset is, after four years. This is why Josh Swihart lies with statistics and tells investors whatever they want to hear.
+The author proposes they realize it would bad for marketing to broadcast how small their anonset is, after four years. This is why Josh Swihart lies with statistics and tells investors whatever they want to hear, including only showing some statistics which
+put Zcash in a positive light.
 
   * Is Josh Swihart commiting financial fraud by knowingly misrepresenting ZEC mainnet statistics?
 
@@ -145,7 +160,7 @@ The author believes Electric Coin Company is purposefully misrepresenting number
 # Conclusions
 
 Zcash investors are being grossly lied to, with cooked statistics that border on outright lies, as well
-as lies of omission about how the surveillance tech of ChainAnalysis and Ciphertrace actually work.
+as lies of omission about how the surveillance tech of ChainAnalysis, Elliptic and Ciphertrace actually work.
 
 Electric Coin Company is part of the Military-Industrial-Surveillance complex, which involves all blockchain
 analysis companies and the Law Enforcement/Government entities which pay them like an IT department. These
@@ -156,11 +171,14 @@ include but are not limited to:
   * ATF
   * DEA
   * IRS
-  * US Secret Service
-  * US Federal Marshalls
   * Department Of Homeland Security (includes ICE)
   * Interpol
   * Europol
-  * State police
-  * Local police
+  * US Secret Service
+  * US Federal Marshalls
+  * US State police
+  * US Local police
+
+As proof of this, we have <a href="https://twitter.com/dukeleto/status/1267849131025989633" target="_blank">documented</a> a <a href="https://www.bitchute.com/video/PWXU7D4VV0lB/" target="_blank">video</a> which was deleted from YouTube and describes
+how Zcash Company works with these organizations. It is a presentation from ChainAnalysis and Ciphertrace to Law Enforcement agencies, describing their technology for de-anonymizing privacy coins.
 
