@@ -23,7 +23,7 @@ But then with further perusal, we will find that because of *how* Zcash Company 
 and because of some previous technical limitations, this feature will actually *reduce* privacy of the individual
 miner and the shielded pool.
 
-<img src="zip213.png">
+<a href="https://twitter.com/feministPLT/status/1264858630068875264" target="_blank"><img src="zip213.png"></a>
 
 ## Why does Shielded Coinbase reduce miner privacy?
 
