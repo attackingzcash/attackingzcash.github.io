@@ -80,14 +80,15 @@ regression rather than improvement.
 ## ZIP213 Hurts The Entire Shieded Pool
 
 Not only does using this "feature/bug" from ECC hurt the individual miner, but it hurts the entire privacy of Zcash mainnet.
-As a chain analysis company, Shielded Coinbase provide extra metadata to link owners of taddrs and zaddrs together.
+As a chain analysis company, Shielded Coinbase leaks extra metadata about miners compared to the traditional way of mining.
 
 Normally, a miner receives funds to a taddr, *then* send to a zaddr. This is a very privacy-preserving process, as the zaddr
 NEVER APPEARS PUBLICLY.
 
 With ZIP213, a miner PUBLISHES their zaddr (something the Hush community considers extremely bad for privacy) and then proceeds
-to publicize various transactions that miner finds to that zaddr. It's similar to saying "this is my z2z transaction id and also
-the amounts that were involved and the address", which basically removes all privacy.
+to publiish various details in transactions that are mined to the public zaddr. It's similar to saying "this is my z2z transaction id and also
+the amounts that were involved and the address", which removes all privacy from the transaction, while still being able to say
+that a shielded address is used.
 
 Even if funds are then moved again to another zaddress, chain analysis companies will use this historical data to correlate
 which miners sold to which exchanges that were then used later on in various transactions. The metadata infects the blockchain
