@@ -90,6 +90,12 @@ to publiish various details in transactions that are mined to the public zaddr. 
 the amounts that were involved and the address", which removes all privacy from the transaction, while still being able to say
 that a shielded address is used.
 
+<center>
+<a href="https://twitter.com/least_nathan/status/1283800664838045696" target="_blank">
+<img src="leastnathan-zip213.png">
+</a>
+</center>
+
 Even if funds are then moved again to another zaddress, chain analysis companies will use this historical data to correlate
 which miners sold to which exchanges that were then used later on in various transactions. The metadata infects the blockchain
 history *forever*.
