@@ -21,7 +21,7 @@ company stole it, to make their vile KYC seem palatable.
 Every cryptocoin has "coinbase", which are the brand new coins that come as the "block reward" in a new
 block. All coinbase traditionally goes to a transparent address.
 
-Shielded coinbase is a new feature of Zcash Protocol where a miner can choose to miner to a shielded address (zaddr)
+Shielded coinbase is a new feature of Zcash Protocol where a miner can mine to a shielded address (zaddr)
 instead of a transparent address (taddr). Sounds like a huge privacy win, right? At first glance, yes.
 But then with further perusal, we will find that because of *how* Zcash Company chose to implement this feature
 and because of some previous technical limitations, this feature will actually *reduce* privacy of the individual
@@ -39,7 +39,7 @@ A few fundamental reasons conspire together to forcefully leak metadata when ZEC
   * Miners must make their zaddr public, in the block metadata
   * Active attacks against zaddrs require knowing the zaddr
 
-Because miners must set their zaddr when starting their node, it will be fixed until the next time the stop and restart.
+Because miners must set their zaddr when starting their node, it will be fixed until the next time they stop and restart.
 This encourages miners to set one zaddr and mine to it for long periods of time, since changing it would require
 stopping and restarting a node. Not only is that extra work, but you cannot mine while your node is restarting, so it
 has a definite cost that can be calculated, per minute of downtime. Miners do not want downtime and hence they will
@@ -81,6 +81,7 @@ regression rather than improvement.
 
 Not only does using this "feature/bug" from ECC hurt the individual miner, but it hurts the entire privacy of Zcash mainnet.
 As a chain analysis company, Shielded Coinbase leaks extra metadata about miners compared to the traditional way of mining.
+This is especially bad given recent <a href="https://eprint.iacr.org/2020/627" target="_blank">metadata attacks against Zcash Protocol</a>.
 
 Normally, a miner receives funds to a taddr, *then* send to a zaddr. This is a very privacy-preserving process, as the zaddr
 NEVER APPEARS PUBLICLY.
@@ -108,7 +109,7 @@ improvement to privacy.
 
 We want to clarify that we are talking about solo miners and mining pools receiving block rewards directly from the blockchain,
 not pool miners getting payouts. Getting paid out to a shielded address is very good for privacy! Everything here is specific
-to Shielded Coinbase, and miners who are getting payouts to zaddrs all good. Those payouts do not expose their addresses publicly, unlike Shielded Coinbase.
+to Shielded Coinbase. Pooled miners who are getting payouts to zaddrs do not need to take any action. Those payouts do not expose their addresses publicly, unlike Shielded Coinbase.
 
 ## Conclusions
 
