@@ -53,7 +53,7 @@ can be sent to it. Shielded Coinbase forces a miner to publicize their address a
 Denial-of-Service attacks and De-Anonymization Attacks which are only possible if the attacker knows your address.
 
 The author of Zcash Protocol offers the advice to use only one zaddr for mining and then use private zaddrs for other
-uses. This is not as private as you could be, since in the past there was a CVE which could identify the IP address
+uses. This is not as private as you could be, since in the past there was <a href="http://duke.leto.net/2019/10/01/zcash-metadata-leakage-cve-2019-16930.html" target="_blank">CVE-2019-16930</a> which could identify the IP address
 of a zaddress. If another similar bug happens, which is very possible, IP addresses of miner zaddrs could be correlated
 to IP addresses of the other zaddrs, proving they are owned by the same person who is running a node at that IP address.
 To address this, miners using ZIP213 should use completely distinct wallets with different IP addresses for maximum
