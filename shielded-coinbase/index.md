@@ -33,7 +33,7 @@ miner and the shielded pool.
 
 ## Why does Shielded Coinbase reduce miner privacy?
 
-At least two fundamental reasons conspire together to forcefully leak metadata when ZEC miners use ZIP213:
+A few fundamental reasons conspire together to forcefully leak metadata when ZEC miners use ZIP213:
 
   * Miners must hardcode their zaddr via the command-line
   * Miners must make their zaddr public, in the block metadata
@@ -49,7 +49,8 @@ The first issue could be fixed with technical changes, but most likely will not,
 for marketing purposes and not for increasing chain privacy.
 
 Lastly, various attacks against shielded addresses exist, but usually require *knowing* the address, so transactions
-can be sent to it. Shielded Coinbase forces a miner to publicize one of their addresses.
+can be sent to it. Shielded Coinbase forces a miner to publicize their address and hence opens them up to
+Denial-of-Service attacks and De-Anonymization Attacks which are only possible if the attacker knows your address.
 
 The author of Zcash Protocol offers the advice to use only one zaddr for mining and then use private zaddrs for other
 uses. This is not as private as you could be, since in the past there was a CVE which could identify the IP address
@@ -59,7 +60,7 @@ To address this, miners using ZIP213 should use completely distinct wallets with
 privacy. As we all know users of software do the least work to get the job done, these things won't happen and miners
 are likely to use the tech in a *privacy-destroying* manner.
 
-This is why zaddrs should *never* be made public, and they should only be given to parties that must absolotutely know them,
+This is why zaddrs should *never* be made public, and they should only be given to parties that must absolutely know them,
 i.e. people sending funds to that address.
 
 ## Shielded Coinbase Is Optimized for Auditability
@@ -81,10 +82,10 @@ regression rather than improvement.
 Not only does using this "feature/bug" from ECC hurt the individual miner, but it hurts the entire privacy of Zcash mainnet.
 As a chain analysis company, Shielded Coinbase provide extra metadata to link owners of taddrs and zaddrs together.
 
-Normally, a miner receives funds to a taddr, *then* send to a zaddr. This is a very privacy-perserving process, as the zaddr
+Normally, a miner receives funds to a taddr, *then* send to a zaddr. This is a very privacy-preserving process, as the zaddr
 NEVER APPEARS PUBLICLY.
 
-With ZIP213, a miner PUBLISHES their zaddr (something the Hush community considers extremely bad for privacy) and then procedes
+With ZIP213, a miner PUBLISHES their zaddr (something the Hush community considers extremely bad for privacy) and then proceeds
 to publicize various transactions that miner finds to that zaddr. It's similar to saying "this is my z2z transaction id and also
 the amounts that were involved and the address", which basically removes all privacy.
 
