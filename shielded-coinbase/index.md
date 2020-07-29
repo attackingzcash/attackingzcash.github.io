@@ -8,6 +8,8 @@
  * It actually reduces privacy of miners, as [Duke Leto pointed out to the creator of Zcash Protocol](https://twitter.com/feministPLT/status/1264858630068875264)
  * Zcash is marketing this as a new feature, when it's really a bug
 
+ <img src="zip213-meme.png">
+
 ## What is Shielded Coinbase?
 
 Firstly, what is coinbase? We are not talking about the evil company, we are talking about newly mined
